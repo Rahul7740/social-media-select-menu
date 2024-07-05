@@ -3,8 +3,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     justify-content: center;
+    height: 100vh;
     font-family: sans-serif;
     background: linear-gradient(135deg, purple 20%, orange 80%);;
 }
@@ -12,10 +12,57 @@ body{
     max-width: 300px;
     text-indent: 10px;
     width: 100%;
-    background-color: #d8cfcf57 ;
+    height: 34px;
+    background-color: lightgrey ;
+    opacity: 0.5;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    cursor: pointer;
+}
+.popup{
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: lightgrey ;
+    opacity: 0.4;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.showPopup{
+    opacity: 0.3;
+}
+.victor{
+    transition: all 0.5s;
+}
+.victorRotate{
+    transform: rotate(180deg);
+}
+.popup-divs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+.print{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+.popup-divs:hover{
+    padding-left: 20px;
+    background-color: gray;
 }
